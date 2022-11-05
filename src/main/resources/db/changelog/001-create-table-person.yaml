@@ -1,0 +1,22 @@
+databaseChangeLog:
+  -  changeSet:
+       id:  1
+       author:  filip
+       changes:
+         -  createTable:
+              tableName:  person
+              columns:
+                -  column:
+                     name:  id
+                     type:  numeric
+                     constraints:
+                       primaryKey:  true
+                       nullable:  false
+                -  column:
+                     name:  username
+                     type:  varchar(50)
+                -  column:
+                     name:  password
+                     type:  varchar(50)
+                     constraints:
+                       nullable:  false
